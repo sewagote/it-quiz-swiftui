@@ -1,0 +1,913 @@
+[
+  {
+    "question": "Which component is known as the brain of the computer?",
+    "answers": [
+      "RAM",
+      "GPU",
+      "CPU",
+      "Motherboard"
+    ],
+    "correctAnswer": 2,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What does DNS stan d for?",
+    "answers": [
+      "Domain Name System",
+      "Digital Network Service",
+      "Data Node Serial"
+    ],
+    "correctAnswer": 0,
+    "category": "networking",
+    "diff": "easy"
+  },
+  {
+    "question": "Which of the following is a programming language?",
+    "answers": [
+      "HTML",
+      "C++",
+      "HTTP",
+      "JSON"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "easy"
+  },
+  {
+    "question": "What does OOP stand for?",
+    "answers": [
+      "Object Oriented Programming",
+      "Open Operational Process",
+      "Output Optimization Protocol",
+      "Object Output Procedure"
+    ],
+    "correctAnswer": 0,
+    "category": "programming",
+    "diff": "easy"
+  },
+  {
+    "question": "What is a variable?",
+    "answers": [
+      "A fixed value in memory",
+      "A named storage location in memory",
+      "A type of loop",
+      "A function parameter"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "easy"
+  },
+  {
+    "question": "What does int stand for in C++?",
+    "answers": [
+      "Internal",
+      "Integer",
+      "Interface",
+      "Iteration"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "easy"
+  },
+  {
+    "question": "What is RAM?",
+    "answers": [
+      "Read Access Memory",
+      "Random Access Memory",
+      "Rapid Access Module",
+      "Read And Modify"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is a GPU primarily used for?",
+    "answers": [
+      "Storing data",
+      "Rendering graphics and parallel processing",
+      "Managing network connections",
+      "Running the operating system"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What does SSD stand for?",
+    "answers": [
+      "Super Speed Drive",
+      "Solid State Drive",
+      "System Storage Device",
+      "Serial Storage Disk"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is the purpose of a motherboard?",
+    "answers": [
+      "To store data permanently",
+      "To connect all components of a computer",
+      "To process graphics",
+      "To provide internet access"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What does HTTP stand for?",
+    "answers": [
+      "HyperText Transfer Protocol",
+      "High Traffic Transmission Protocol",
+      "Hyperlink Text Transfer Process",
+      "Host Transfer Transmission Protocol"
+    ],
+    "correctAnswer": 0,
+    "category": "networking",
+    "diff": "easy"
+  },
+  {
+    "question": "What is an IP address?",
+    "answers": [
+      "A website name",
+      "A unique numerical identifier for a device on a network",
+      "A type of internet cable",
+      "A network speed measurement"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "easy"
+  },
+  {
+    "question": "What does VPN stand for?",
+    "answers": [
+      "Virtual Private Network",
+      "Verified Public Node",
+      "Variable Packet Network",
+      "Virtual Protocol Node"
+    ],
+    "correctAnswer": 0,
+    "category": "networking",
+    "diff": "easy"
+  },
+  {
+    "question": "What is the purpose of a firewall?",
+    "answers": [
+      "To speed up internet connection",
+      "To monitor and control incoming and outgoing network traffic",
+      "To store network passwords",
+      "To assign IP addresses"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is the kernel of an operating system?",
+    "answers": [
+      "The user interface",
+      "The core component that manages hardware and system resources",
+      "The file manager",
+      "The network driver"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What does CLI stand for?",
+    "answers": [
+      "Computer Language Interface",
+      "Command Line Interface",
+      "Central Logic Interpreter",
+      "Core Linux Instance"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "easy"
+  },
+  {
+    "question": "What is a process in an operating system?",
+    "answers": [
+      "A file stored on disk",
+      "A program currently being executed",
+      "A type of file system",
+      "A network connection"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "medium"
+  },
+  {
+    "question": "What does GUI stand for?",
+    "answers": [
+      "General User Input",
+      "Graphical User Interface",
+      "Global Unix Instance",
+      "General Utility Interface"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "easy"
+  },
+  {
+    "question": "What is a file system?",
+    "answers": [
+      "A method for organizing and storing files on a storage device",
+      "A type of network protocol",
+      "A programming language",
+      "A hardware component"
+    ],
+    "correctAnswer": 0,
+    "category": "os",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a pointer in C++?",
+    "answers": [
+      "A variable that stores a memory address",
+      "A type of loop",
+      "A function that returns a value",
+      "A class method"
+    ],
+    "correctAnswer": 0,
+    "category": "programming",
+    "diff": "hard"
+  },
+  {
+    "question": "What does TCP stand for?",
+    "answers": [
+      "Transfer Control Protocol",
+      "Transmission Control Protocol",
+      "Terminal Connection Protocol",
+      "Text Communication Protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is the difference between HDD and SSD?",
+    "answers": [
+      "HDD uses flash memory, SSD uses spinning disks",
+      "SSD uses flash memory, HDD uses spinning disks",
+      "They are identical in technology",
+      "HDD is faster than SSD"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a subnet mask?",
+    "answers": [
+      "A type of firewall",
+      "A number that defines the network and host portions of an IP address",
+      "A VPN protocol",
+      "A DNS record type"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "hard"
+  },
+  {
+    "question": "What is inheritance in OOP?",
+    "answers": [
+      "A way to copy files",
+      "A mechanism where a class acquires properties of another class",
+      "A type of variable",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "medium"
+  },
+  {
+    "question": "What is virtual memory?",
+    "answers": [
+      "Memory that doesn't physically exist",
+      "A technique that uses disk space to extend RAM",
+      "A type of RAM",
+      "Cloud storage"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a MAC address?",
+    "answers": [
+      "An address used only on Apple devices",
+      "A unique hardware identifier assigned to a network interface",
+      "A type of IP address",
+      "A software license number"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is the clock speed of a CPU measured in?",
+    "answers": [
+      "Bytes",
+      "Gigahertz",
+      "Megapixels",
+      "Watts"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is a constructor in OOP?",
+    "answers": [
+      "A function that destroys objects",
+      "A special method called when an object is created",
+      "A type of loop",
+      "A global variable"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "medium"
+  },
+  {
+    "question": "What does BIOS stand for?",
+    "answers": [
+      "Basic Input Output System",
+      "Binary Integrated Operating System",
+      "Boot Input Output Software",
+      "Basic Internal Operating System"
+    ],
+    "correctAnswer": 0,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is multithreading in an OS?",
+    "answers": [
+      "Sewing multiple threads together",
+      "Running multiple threads of a process simultaneously",
+      "A type of network protocol",
+      "A file system technique"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the purpose of ARP in networking?",
+    "answers": [
+      "To assign IP addresses",
+      "To map IP addresses to MAC addresses",
+      "To encrypt network traffic",
+      "To route packets between networks"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a stack in programming?",
+    "answers": [
+      "A type of database",
+      "A Last-In-First-Out data structure",
+      "A network protocol",
+      "A graphics card"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "medium"
+  },
+  {
+    "question": "What does DHCP stand for?",
+    "answers": [
+      "Dynamic Host Configuration Protocol",
+      "Digital Host Control Protocol",
+      "Direct Hardware Communication Protocol",
+      "Dynamic HTTP Connection Protocol"
+    ],
+    "correctAnswer": 0,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is cache memory?",
+    "answers": [
+      "Permanent storage",
+      "Small high-speed memory located close to the CPU",
+      "Virtual memory",
+      "External storage"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a deadlock in an operating system?",
+    "answers": [
+      "A locked file",
+      "A situation where two or more processes are stuck waiting for each other",
+      "A crashed program",
+      "A security vulnerability"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is encapsulation in OOP?",
+    "answers": [
+      "Wrapping data in a capsule shape",
+      "Bundling data and methods that operate on that data within a class",
+      "A type of inheritance",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "medium"
+  },
+  {
+    "question": "What is NAT in networking?",
+    "answers": [
+      "Network Address Translation",
+      "Node Allocation Table",
+      "Network Access Token",
+      "Null Address Transfer"
+    ],
+    "correctAnswer": 0,
+    "category": "networking",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the purpose of a CPU cooler?",
+    "answers": [
+      "To speed up the CPU",
+      "To prevent the CPU from overheating",
+      "To increase RAM capacity",
+      "To improve graphics performance"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is a semaphore in an OS?",
+    "answers": [
+      "A traffic signal",
+      "A synchronization tool used to control access to shared resources",
+      "A type of file system",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is polymorphism in OOP?",
+    "answers": [
+      "Having multiple constructors",
+      "The ability of objects to take many forms",
+      "A type of database",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the OSI model?",
+    "answers": [
+      "An operating system",
+      "A conceptual framework with 7 layers describing network communication",
+      "A type of hardware",
+      "A programming paradigm"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "hard"
+  },
+  {
+    "question": "What is pipelining in a CPU?",
+    "answers": [
+      "Cooling system for processors",
+      "A technique where multiple instructions are overlapped in execution",
+      "A type of memory",
+      "A storage interface"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a race condition in OS?",
+    "answers": [
+      "A CPU benchmark test",
+      "A situation where the output depends on the sequence of uncontrollable events",
+      "A type of sorting algorithm",
+      "A network speed test"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a lambda function?",
+    "answers": [
+      "A Greek letter used in math",
+      "An anonymous function defined inline",
+      "A type of class",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "hard"
+  },
+  {
+    "question": "What is HTTPS?",
+    "answers": [
+      "A faster version of HTTP",
+      "HTTP with SSL/TLS encryption for secure communication",
+      "A new internet protocol",
+      "A type of web server"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "easy"
+  },
+  {
+    "question": "What is overclocking?",
+    "answers": [
+      "Setting the wrong time on a computer",
+      "Running a CPU or GPU faster than its rated speed",
+      "A type of virus",
+      "A power saving feature"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a page fault in an OS?",
+    "answers": [
+      "An error in a web browser",
+      "When a program accesses a memory page not currently in RAM",
+      "A corrupted file",
+      "A network error"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a template in C++?",
+    "answers": [
+      "A pre-designed document",
+      "A feature that allows writing generic code that works with any data type",
+      "A type of class",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "hard"
+  },
+  {
+    "question": "What is BGP in networking?",
+    "answers": [
+      "Basic Gateway Protocol",
+      "Border Gateway Protocol used to route traffic between autonomous systems",
+      "Bandwidth Group Policy",
+      "Binary Gateway Process"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the purpose of a PSU in a computer?",
+    "answers": [
+      "To process data",
+      "To convert AC power to DC power for computer components",
+      "To store data",
+      "To connect to the internet"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is context switching in an OS?",
+    "answers": [
+      "Changing the desktop theme",
+      "Saving and restoring the state of a process so the CPU can switch between processes",
+      "Switching between applications",
+      "A type of memory management"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the difference between a class and an object?",
+    "answers": [
+      "They are the same thing",
+      "A class is a blueprint, an object is an instance of that blueprint",
+      "An object is a blueprint, a class is an instance",
+      "Classes are only in Java"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "easy"
+  },
+  {
+    "question": "What is SSL/TLS?",
+    "answers": [
+      "A type of operating system",
+      "Cryptographic protocols that provide secure communication over a network",
+      "A hardware component",
+      "A programming language"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is thermal throttling?",
+    "answers": [
+      "A cooking technique",
+      "When a CPU reduces its speed to prevent overheating",
+      "A type of network congestion",
+      "A memory management technique"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a mutex?",
+    "answers": [
+      "A type of connector",
+      "A synchronization primitive that prevents multiple threads from accessing a resource simultaneously",
+      "A file format",
+      "A network protocol"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the difference between stack and heap memory?",
+    "answers": [
+      "They are identical",
+      "Stack is automatic/fast for local variables, heap is dynamic/manual for allocated memory",
+      "Heap is faster than stack",
+      "Stack is only used in Python"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a VLAN?",
+    "answers": [
+      "A very large area network",
+      "A logical network segment that groups devices regardless of physical location",
+      "A type of VPN",
+      "A wireless network standard"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "hard"
+  },
+  {
+    "question": "How many cores does a dual-core processor have?",
+    "answers": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is scheduling in an OS?",
+    "answers": [
+      "Setting the system clock",
+      "Determining the order in which processes get CPU time",
+      "Managing files",
+      "Installing software"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "medium"
+  },
+  {
+    "question": "What is an abstract class?",
+    "answers": [
+      "A class with no methods",
+      "A class that cannot be instantiated and must be subclassed",
+      "A private class",
+      "A static class"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "hard"
+  },
+  {
+    "question": "What is latency in networking?",
+    "answers": [
+      "The speed of a network",
+      "The time delay for data to travel from source to destination",
+      "The amount of data transferred",
+      "The number of connected devices"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is the purpose of a heat sink?",
+    "answers": [
+      "To generate heat",
+      "To absorb and dissipate heat from components like the CPU",
+      "To measure temperature",
+      "To cool RAM"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "easy"
+  },
+  {
+    "question": "What is the difference between 32-bit and 64-bit OS?",
+    "answers": [
+      "No practical difference",
+      "64-bit can address more memory and process larger data chunks",
+      "32-bit is faster",
+      "64-bit only works on newer CPUs"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a linked list?",
+    "answers": [
+      "A list of website links",
+      "A data structure where each element points to the next",
+      "A type of array",
+      "A database table"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "medium"
+  },
+  {
+    "question": "What is bandwidth in networking?",
+    "answers": [
+      "The width of a network cable",
+      "The maximum data transfer rate of a network",
+      "The number of connected devices",
+      "The latency of a connection"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "easy"
+  },
+  {
+    "question": "What is PCIe?",
+    "answers": [
+      "Personal Computer Interface external",
+      "Peripheral Component Interconnect Express - a high-speed interface for connecting components",
+      "A type of CPU",
+      "A networking standard"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a zombie process?",
+    "answers": [
+      "A virus",
+      "A process that has finished but its entry remains in the process table",
+      "A process consuming all CPU",
+      "A malware type"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a destructor in C++?",
+    "answers": [
+      "A function that creates objects",
+      "A special method called when an object is destroyed to free resources",
+      "A type of pointer",
+      "A loop construct"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "medium"
+  },
+  {
+    "question": "What is a load balancer?",
+    "answers": [
+      "A power management tool",
+      "A device that distributes network traffic across multiple servers",
+      "A type of firewall",
+      "A storage device"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What does DDR stand for in DDR RAM?",
+    "answers": [
+      "Double Data Rate",
+      "Direct Data Register",
+      "Dynamic Dual Ram",
+      "Dedicated Data Resource"
+    ],
+    "correctAnswer": 0,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is I/O scheduling in an OS?",
+    "answers": [
+      "Scheduling system restarts",
+      "Managing and ordering requests to I/O devices to optimize performance",
+      "Scheduling user logins",
+      "Managing network I/O only"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is the difference between == and = in C++?",
+    "answers": [
+      "No difference",
+      "= is assignment, == is comparison",
+      "== is assignment, = is comparison",
+      "Both are comparison operators"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "easy"
+  },
+  {
+    "question": "What is CDN in networking?",
+    "answers": [
+      "Central Data Node",
+      "Content Delivery Network - servers distributed geographically to deliver content faster",
+      "Connected Device Network",
+      "Core DNS Node"
+    ],
+    "correctAnswer": 1,
+    "category": "networking",
+    "diff": "medium"
+  },
+  {
+    "question": "What is the purpose of thermal paste?",
+    "answers": [
+      "To glue the CPU to the motherboard",
+      "To improve heat transfer between the CPU and heat sink",
+      "To protect against static electricity",
+      "To lubricate fans"
+    ],
+    "correctAnswer": 1,
+    "category": "hardware",
+    "diff": "medium"
+  },
+  {
+    "question": "What is memory fragmentation in an OS?",
+    "answers": [
+      "Corrupted memory",
+      "Inefficient use of memory where free space is broken into small unusable chunks",
+      "Low memory condition",
+      "Memory overflow"
+    ],
+    "correctAnswer": 1,
+    "category": "os",
+    "diff": "hard"
+  },
+  {
+    "question": "What is a pure virtual function in C++?",
+    "answers": [
+      "A function with no parameters",
+      "A virtual function with no implementation that must be overridden in derived classes",
+      "A static function",
+      "A function returning void"
+    ],
+    "correctAnswer": 1,
+    "category": "programming",
+    "diff": "hard"
+  }
+]
