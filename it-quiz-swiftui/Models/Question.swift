@@ -5,6 +5,17 @@
 //  Created by Ivan Krugov on 08.08.2026.
 //
 
+enum Language : String, Codable, CaseIterable {
+    case russian, english
+
+    var fileName : String {
+        switch self {
+        case .russian: return "questions_ru"
+        case .english: return "questions_en"
+        }
+    }
+}
+
 enum Category: String, Codable, CaseIterable {
     case hardware, networking, programming, os
 }
