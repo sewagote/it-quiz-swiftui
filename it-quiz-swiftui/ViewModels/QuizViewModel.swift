@@ -9,6 +9,7 @@ import Foundation
 
 class QuizViewModel: ObservableObject {
     let questions: [Question]
+    @Published var isQuizFinished: Bool = false
     @Published var currentQuestionIndex: Int
     @Published var correctCount: Int
     @Published var currentStreak: Int
@@ -26,5 +27,29 @@ class QuizViewModel: ObservableObject {
         self.language = language
         self.category = category
         self.difficulty = difficulty
+    }
+
+    var currentQuestion: Question {
+        questions[currentQuestionIndex]
+    }
+
+    func submitAnswer(_ index: Int) {
+        if index == currentQuestion.correctAnswer {
+            correctCount += 1
+            currentStreak += 1
+            if currentStreak > maxStreak {
+                maxStreak = currentStreak
+            }
+        } else {
+            currentStreak = 0
+        }
+    }
+
+    func moveToNextQuestion() {
+        if currentQuestionIndex < questions.count - 1  {
+            currentQuestionIndex += 1
+        } else {
+            isQuizFinished = true
+        }
     }
 }
