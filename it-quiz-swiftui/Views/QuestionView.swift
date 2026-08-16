@@ -10,6 +10,9 @@ struct QuestionView: View {
     @ObservedObject var viewModel: QuizViewModel
     var body: some View {
         VStack {
+            Text("Количество верно отвеченных вопросов: \(viewModel.correctCount)")
+            Text("Нынешний стрик: \(viewModel.currentStreak)")
+            Text("Счёт вопросов \(viewModel.currentQuestionIndex+1)/\(viewModel.questions.count)")
             Text(viewModel.currentQuestion.question)
             HStack() {
                 ForEach(viewModel.currentQuestion.answers.indices, id: \.self) {
