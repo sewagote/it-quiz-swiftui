@@ -10,43 +10,47 @@ struct QuestionView: View {
     @ObservedObject var viewModel: QuizViewModel
     var body: some View {
         VStack {
-            Text("Количество верно отвеченных вопросов: \(viewModel.correctCount)")
-            Text("Нынешний стрик: \(viewModel.currentStreak)")
-            Text("Счёт вопросов \(viewModel.currentQuestionIndex+1)/\(viewModel.questions.count)")
-            Text(viewModel.currentQuestion.question)
-            HStack() {
-                ForEach(viewModel.currentQuestion.answers.indices, id: \.self) {
-                    index in
-                    let isCorrectAnswer = index == viewModel.currentQuestion.correctAnswer
-                    let isSelected = index == viewModel.selectedAnswerIndex
-                    let hasAnswered = viewModel.selectedAnswerIndex != nil
+            if !viewModel.isQuizFinished {
+                Text("Количество верно отвеченных вопросов: \(viewModel.correctCount)")
+                Text("Нынешний стрик: \(viewModel.currentStreak)")
+                Text("Счёт вопросов \(viewModel.currentQuestionIndex+1)/\(viewModel.questions.count)")
+                Text(viewModel.currentQuestion.question)
+                HStack() {
+                    ForEach(viewModel.currentQuestion.answers.indices, id: \.self) {
+                        index in
+                        let isCorrectAnswer = index == viewModel.currentQuestion.correctAnswer
+                        let isSelected = index == viewModel.selectedAnswerIndex
+                        let hasAnswered = viewModel.selectedAnswerIndex != nil
 
-                    let buttonColor: Color = {
+                        let buttonColor: Color = {
 
-                        if !hasAnswered {
-                            return .blue
-                        } else if isCorrectAnswer {
-                            return .green
-                        } else if isSelected {
-                            return .red
-                        } else {
-                            return .gray
+                            if !hasAnswered {
+                                return .blue
+                            } else if isCorrectAnswer {
+                                return .green
+                            } else if isSelected {
+                                return .red
+                            } else {
+                                return .gray
+                            }
+                        }()
+
+                        Button {
+                            viewModel.submitAnswer(index)
+                        } label: {
+                            Text(viewModel.currentQuestion.answers[index])
                         }
-                    }()
-
-                    Button {
-                        viewModel.submitAnswer(index)
-                    } label: {
-                        Text(viewModel.currentQuestion.answers[index])
+                        .foregroundStyle(buttonColor)
                     }
-                    .foregroundStyle(buttonColor)
                 }
-            }
-            if viewModel.selectedAnswerIndex != nil {
-                Button("Далее") {
-                    viewModel.moveToNextQuestion()
+                if viewModel.selectedAnswerIndex != nil {
+                    Button("Далее") {
+                        viewModel.moveToNextQuestion()
+                    }
+                    .foregroundStyle(Color.black)
                 }
-                .foregroundStyle(Color.black)
+            } else {
+                ResultsView(correctCount: viewModel.correctCount, maxStreak: viewModel.maxStreak, totalQuestions: viewModel.questions.count)
             }
         }
         .padding()
