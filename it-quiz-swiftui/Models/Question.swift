@@ -1,12 +1,7 @@
-//
-//  Qestions.swift
-//  it-quiz-swiftui
-//
-//  Created by Ivan Krugov on 08.08.2026.
-//
-
 enum Language : String, Codable, CaseIterable {
     case russian, english
+
+
 
     var fileName : String {
         switch self {
@@ -14,14 +9,58 @@ enum Language : String, Codable, CaseIterable {
         case .english: return "questions_en"
         }
     }
+
+    var displayName: String {
+        switch self {
+        case .russian: return "Русский"
+        case .english: return "English"
+        }
+    }
 }
 
 enum Category: String, Codable, CaseIterable {
     case hardware, networking, programming, os
+
+    func displayName(for lang: Language) -> String {
+        switch lang {
+        case .russian:
+            switch self {
+            case .hardware : return "Железо"
+            case .networking : return "Сети"
+            case .programming : return "Программирование"
+            case .os : return "Оператицонные Сети"
+            }
+        case .english:
+            switch self {
+            case .hardware : return "Hardware"
+            case .networking : return "Networking"
+            case .programming : return "Programming"
+            case .os : return "Operating Systems"
+            }
+        }
+    }
 }
+
 
 enum Difficulty: String, Codable, CaseIterable {
     case easy, medium, hard
+
+    func displayName(for lang: Language) -> String {
+        switch lang {
+        case .russian:
+            switch self {
+            case .easy : return "Легко"
+            case .medium : return "Средне"
+            case .hard : return "Сложно"
+            }
+        case .english:
+            switch self {
+            case .easy : return "Easy"
+            case .medium : return "Medium"
+            case .hard : return "Hard"
+            }
+        }
+    }
 }
 
 struct Question : Codable {

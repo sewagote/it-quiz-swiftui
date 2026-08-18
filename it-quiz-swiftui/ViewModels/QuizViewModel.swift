@@ -1,13 +1,8 @@
-//
-//  QuizViewModel.swift
-//  it-quiz-swiftui
-//
-//  Created by Ivan Krugov on 15.08.2026.
-//
 import Foundation
 import Combine
 
-class QuizViewModel: ObservableObject {
+class QuizViewModel: ObservableObject, Identifiable, Hashable {
+    let id = UUID()
     let questions: [Question]
     @Published var selectedAnswerIndex: Int?
     @Published var isQuizFinished: Bool = false
@@ -53,5 +48,13 @@ class QuizViewModel: ObservableObject {
         } else {
             isQuizFinished = true
         }
+    }
+
+    static func == (lhs: QuizViewModel, rhs: QuizViewModel) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }

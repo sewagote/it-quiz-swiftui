@@ -1,9 +1,3 @@
-//
-//  Loader.swift
-//  it-quiz-swiftui
-//
-//  Created by Ivan Krugov on 08.08.2026.
-//
 import Foundation
 
 func loadQuestions(fileName: String) -> [Question] {

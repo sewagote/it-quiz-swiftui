@@ -1,9 +1,3 @@
-//
-//  QuestionView.swift
-//  it-quiz-swiftui
-//
-//  Created by Ivan Krugov on 15.08.2026.
-//
 import SwiftUI
 
 struct QuestionView: View {
