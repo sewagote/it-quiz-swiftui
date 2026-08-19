@@ -5,9 +5,15 @@ struct QuestionView: View {
     var body: some View {
         VStack {
             if !viewModel.isQuizFinished {
-                Text("Количество верно отвеченных вопросов: \(viewModel.correctCount)")
-                Text("Нынешний стрик: \(viewModel.currentStreak)")
-                Text("Счёт вопросов \(viewModel.currentQuestionIndex+1)/\(viewModel.questions.count)")
+                Text(
+                    "\(viewModel.language.strings.correctCountLabel) \(viewModel.correctCount)"
+                )
+                Text(
+                    "\(viewModel.language.strings.currentStreakLabel) \(viewModel.currentStreak)"
+                )
+                Text(
+                    "\(viewModel.language.strings.questionProgressLabel) \(viewModel.currentQuestionIndex+1)/\(viewModel.questions.count)"
+                )
                 Text(viewModel.currentQuestion.question)
                 HStack() {
                     ForEach(viewModel.currentQuestion.answers.indices, id: \.self) {
@@ -38,13 +44,17 @@ struct QuestionView: View {
                     }
                 }
                 if viewModel.selectedAnswerIndex != nil {
-                    Button("Далее") {
+                    Button(viewModel.language.strings.nextButton) {
                         viewModel.moveToNextQuestion()
                     }
                     .foregroundStyle(Color.black)
                 }
             } else {
-                ResultsView(correctCount: viewModel.correctCount, maxStreak: viewModel.maxStreak, totalQuestions: viewModel.questions.count)
+                ResultsView(
+                    language: viewModel.language, correctCount: viewModel.correctCount,
+                    maxStreak: viewModel.maxStreak,
+                    totalQuestions: viewModel.questions.count
+                )
             }
         }
         .padding()
@@ -62,7 +72,7 @@ let questionsExample: [Question] = [
 #Preview {
     QuestionView(viewModel: QuizViewModel(
         questions: questionsExample,
-        language: .russian,
+        language: .english,
         category: .hardware,
         difficulty: .easy
     ))

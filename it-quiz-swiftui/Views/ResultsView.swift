@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct ResultsView: View {
-
+    
+    let language: Language
     let correctCount: Int
     let maxStreak: Int
     let totalQuestions: Int
@@ -10,13 +11,18 @@ struct ResultsView: View {
 
     var body: some View {
         VStack {
-            Text("Квиз окончен!")
-            Text("Ваш максимальный стрик: \(maxStreak)")
-            Text("Ваш счёт: \(correctCount)/\(totalQuestions)")
+            Text(language.strings.quizFinished)
+            Text("\(language.strings.maxStreakLabel) \(maxStreak)")
+            Text("\(language.strings.scoreLabel) \(correctCount)/\(totalQuestions)")
         }
     }
 }
 
 #Preview {
-    ResultsView(correctCount: 7, maxStreak: 5, totalQuestions: 9)
+    ResultsView(
+        language: .english,
+        correctCount: 7,
+        maxStreak: 5,
+        totalQuestions: 9
+    )
 }

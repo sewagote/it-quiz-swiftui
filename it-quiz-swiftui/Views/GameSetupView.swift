@@ -26,20 +26,23 @@ struct GameSetupView: View {
 
     var body: some View {
         VStack {
-            Picker("Язык", selection: $selectedLanguage) {
+            Picker(
+                selectedLanguage.strings.languagePickerTitle,
+                selection: $selectedLanguage
+            ) {
                 ForEach(Language.allCases, id: \.self) {language in
                     Text(language.displayName)
                 }
             }
 
-            Picker("Категория", selection: $selectedCategory) {
+            Picker(selectedLanguage.strings.categoryPickerTitle, selection: $selectedCategory) {
                 ForEach(Category.allCases, id: \.self) {category in
                     Text(category.displayName(for: selectedLanguage))
                 }
             }
 
 
-            Picker("Сложность", selection: $selectedDifficulty) {
+            Picker(selectedLanguage.strings.difficultyPickerTitle, selection: $selectedDifficulty) {
                 ForEach(Difficulty.allCases, id: \.self) {difficulty in
                     Text(difficulty.displayName(for: selectedLanguage))
                 }
@@ -48,7 +51,7 @@ struct GameSetupView: View {
             Button() {
                 startGame()
             } label: {
-                Text("Начать игру")
+                Text(selectedLanguage.strings.startGameButton)
                     .padding()
             }
         }
