@@ -83,6 +83,7 @@ struct UIStrings {
     let categoryPickerTitle: String
     let difficultyPickerTitle: String
     let startGameButton: String
+    let startAgainButton: String
 }
 
 extension Language {
@@ -100,7 +101,8 @@ extension Language {
                 languagePickerTitle: "Язык",
                 categoryPickerTitle: "Категория",
                 difficultyPickerTitle: "Сложность",
-                startGameButton: "Начать игру"
+                startGameButton: "Начать игру",
+                startAgainButton: "Начать игру заново"
             )
         case .english:
             return UIStrings(
@@ -114,10 +116,10 @@ extension Language {
                 languagePickerTitle: "Language",
                 categoryPickerTitle: "Category",
                 difficultyPickerTitle: "Difficulty",
-                startGameButton: "Start game"
+                startGameButton: "Start game",
+                startAgainButton: "Start game again"
             )
 
         }
     }
 }
-

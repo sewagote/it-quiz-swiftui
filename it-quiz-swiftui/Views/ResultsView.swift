@@ -6,14 +6,23 @@ struct ResultsView: View {
     let correctCount: Int
     let maxStreak: Int
     let totalQuestions: Int
-
+    @Environment(\.dismiss) private var dismiss
 
 
     var body: some View {
         VStack {
             Text(language.strings.quizFinished)
+                .padding(30)
             Text("\(language.strings.maxStreakLabel) \(maxStreak)")
+                .padding(15)
             Text("\(language.strings.scoreLabel) \(correctCount)/\(totalQuestions)")
+            Button {
+                dismiss()
+            } label: {
+                Text("\(language.strings.startAgainButton)")
+                    .foregroundStyle(.red)
+                    .padding(15)
+            }
         }
     }
 }
