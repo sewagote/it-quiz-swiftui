@@ -22,12 +22,16 @@ SwiftUI-ремейк консольной IT-викторины на C++ ([ор�
 
 ## Структура проекта
 
+## Структура проекта
+
+\`\`\`
 it-quiz-swiftui/
-├── Models/ — Question, Category, Difficulty, Language, UIStrings
-├── ViewModels/ — QuizViewModel (состояние текущей игры)
-├── Views/ — GameSetupView, QuestionView, ResultsView и вспомогательные View
-├── Services/ — QuestionLoader (загрузка вопросов из JSON)
-└── Resources/ — JSON-файлы с вопросами
+├── Models/       — Question, Category, Difficulty, Language, UIStrings
+├── ViewModels/   — QuizViewModel (состояние текущей игры)
+├── Views/        — GameSetupView, QuestionView, ResultsView и вспомогательные View
+├── Services/     — QuestionLoader (загрузка вопросов из JSON)
+└── Resources/    — JSON-файлы с вопросами
+\`\`\`
 
 ## Запуск
 
