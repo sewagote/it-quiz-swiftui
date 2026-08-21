@@ -6,8 +6,8 @@ struct GameSetupView: View {
     @State private var selectedLanguage: Language = .russian
     @State private var selectedCategory: Category = .os
     @State private var selectedDifficulty: Difficulty = .easy
-
-
+    
+    
     private func startGame() {
         let allQuestions = loadQuestions(fileName: selectedLanguage.fileName)
         let filtered = allQuestions.filter { question in
@@ -22,32 +22,24 @@ struct GameSetupView: View {
         )
         activeViewModel = viewModel
     }
-
-
+    
+    
     var body: some View {
         VStack {
-            Picker(
-                selectedLanguage.strings.languagePickerTitle,
-                selection: $selectedLanguage
-            ) {
-                ForEach(Language.allCases, id: \.self) {language in
-                    Text(language.displayName)
-                }
-            }
-
+            
             Picker(selectedLanguage.strings.categoryPickerTitle, selection: $selectedCategory) {
                 ForEach(Category.allCases, id: \.self) {category in
                     Text(category.displayName(for: selectedLanguage))
                 }
             }
-
-
+            
+            
             Picker(selectedLanguage.strings.difficultyPickerTitle, selection: $selectedDifficulty) {
                 ForEach(Difficulty.allCases, id: \.self) {difficulty in
                     Text(difficulty.displayName(for: selectedLanguage))
                 }
             }
-
+            
             Button() {
                 startGame()
             } label: {
@@ -58,6 +50,27 @@ struct GameSetupView: View {
         .padding()
         .navigationDestination(item: $activeViewModel) {
             viewModel in QuestionView(viewModel: viewModel)
+        }
+        .toolbar() {
+            ToolbarItem(placement: .topBarTrailing) {
+                HStack {
+                    Button {
+                        selectedLanguage = .russian
+                    } label: {
+                        Text("🇷🇺")
+                            .font(.largeTitle)
+                            .opacity(selectedLanguage == .russian ? 1.0 : 0.4)
+                    }
+                    
+                    Button {
+                        selectedLanguage = .english
+                    } label: {
+                        Text("🇺🇸")
+                            .font(.largeTitle)
+                            .opacity(selectedLanguage == .english ? 1.0 : 0.4)
+                    }
+                }
+            }
         }
     }
 }
