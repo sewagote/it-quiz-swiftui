@@ -13,7 +13,7 @@ struct ResultsView: View {
         VStack {
             Text(language.strings.quizFinished)
                 .padding(30)
-            Text("\(language.strings.maxStreakLabel) \(maxStreak)")
+            StatLabel(label: language.strings.maxStreakLabel, stat: maxStreak)
                 .padding(15)
             Text("\(language.strings.scoreLabel) \(correctCount)/\(totalQuestions)")
             Button {

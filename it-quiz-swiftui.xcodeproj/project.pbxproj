@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5ED9439930387588008E80DD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5ED943983038757F008E80DD /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5E6AB9243027029A00C35634 /* it-quiz-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "it-quiz-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED943983038757F008E80DD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		5E6AB91B3027029A00C35634 = {
 			isa = PBXGroup;
 			children = (
+				5ED943983038757F008E80DD /* README.md */,
 				5E6AB9263027029A00C35634 /* it-quiz-swiftui */,
 				5E6AB9253027029A00C35634 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED9439930387588008E80DD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

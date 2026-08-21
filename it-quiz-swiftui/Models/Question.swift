@@ -28,7 +28,7 @@ enum Category: String, Codable, CaseIterable {
             case .hardware : return "Железо"
             case .networking : return "Сети"
             case .programming : return "Программирование"
-            case .os : return "Оператицонные системы"
+            case .os : return "Операционные системы"
             }
         case .english:
             switch self {
@@ -93,11 +93,11 @@ extension Language {
             return UIStrings(
                 nextButton: "Далее",
                 quizFinished: "Квиз завершен!",
-                maxStreakLabel: "Макстмальный стрик:",
-                scoreLabel: "Ваш счёт:",
-                correctCountLabel: "Количество верно отвеченных вопросов:",
-                currentStreakLabel: "Нынешний стрик:",
-                questionProgressLabel: "Счёт вопросов:",
+                maxStreakLabel: "Максимальный стрик",
+                scoreLabel: "Ваш счёт",
+                correctCountLabel: "Количество верно отвеченных вопросов",
+                currentStreakLabel: "Нынешний стрик",
+                questionProgressLabel: "Счёт вопросов",
                 languagePickerTitle: "Язык",
                 categoryPickerTitle: "Категория",
                 difficultyPickerTitle: "Сложность",
@@ -108,10 +108,10 @@ extension Language {
             return UIStrings(
                 nextButton: "Next",
                 quizFinished: "Quiz is finished!",
-                maxStreakLabel: "Max streak:",
-                scoreLabel: "Your score:",
-                correctCountLabel: "Correct answers:",
-                currentStreakLabel: "Current streak:",
+                maxStreakLabel: "Max streak",
+                scoreLabel: "Your score",
+                correctCountLabel: "Correct answers",
+                currentStreakLabel: "Current streak",
                 questionProgressLabel: "Question",
                 languagePickerTitle: "Language",
                 categoryPickerTitle: "Category",
